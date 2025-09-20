@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VASISHTHA — PG Accommodation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#2563eb;--bg:#f7f9fc;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}
+    .container{max-width:1100px;margin:32px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start;margin-top:12px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{margin:0 0 14px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .list{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .chip{background:#eef2ff;padding:8px 10px;border-radius:999px;font-weight:600;color:var(--accent);font-size:13px}
+    .map{width:100%;height:260px;border-radius:8px;overflow:hidden}
+    .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .room{padding:12px;border-radius:10px;background:#fff}
+    .room h3{margin:0 0 6px;font-size:16px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    form{display:grid;gap:10px}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+    footer{margin:34px 0 80px;text-align:center;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr} .rooms{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:600px){.rooms{grid-template-columns:1fr}.gallery img{height:100px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PG</div>
+        <div>
+          <div style="font-weight:700">VASISHTHA PG</div>
+          <div style="font-size:13px;color:var(--muted)">PG for boys near VGP queens town</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#rooms">Rooms</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Welcome to VASISHTHA PG</h1>
+          <p class="lead">Comfortable, secure PG accommodation near VGP QUEENS TOWN. Flexible rents, Wi‑Fi, and 24/7 support.</p>
+          <div class="list">
+            <div class="chip">Free Wi‑Fi</div>
+            <div class="chip">Andhra Meals Available</div>
+            <div class="chip">Housekeeping</div>
+            <div class="chip">Security</div>
+          </div>
+
+          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+            <a class="cta" href="tel:PHONE_NUMBER">Call: 7013178370</a>
+            <a style="padding:10px 12px;border-radius:8px;background:#eef2ff;color:var(--accent);text-decoration:none;font-weight:700" href="#contact">Book Now</a>
+          </div>
+
+          <div style="margin-top:16px;font-size:14px;color:var(--muted)">
+            <strong>Address:</strong> VGP QUEENS TOWN<br>
+            NEAR SAVEETHA UNIVERSITY
+          </div>
+        </div>
+
+        <div id="rooms" class="card" style="margin-top:14px">
+          <h2 style="margin:0 0 8px">Rooms & Pricing</h2>
+          <div class="rooms">
+            <div class="room">
+              <h3>Single Room</h3>
+              <div style="color:var(--muted);font-size:14px">Private bed, Attached bathroom, AC</div>
+              <div style="margin-top:8px;font-weight:700">₹ / month</div>
+            </div>
+            <div class="room">
+              <h3>3 Sharing</h3>
+              <div style="color:var(--muted);font-size:14px">Three beds, Attached bathroom, AC</div>
+              <div style="margin-top:8px;font-weight:700">₹ / month</div>
+            </div>
+            <div class="room">
+              <h3>4 Sharing</h3>
+              <div style="color:var(--muted);font-size:14px">Four beds, Attached bathroom, AC</div>
+              <div style="margin-top:8px;font-weight:700">₹ / month</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery" class="card" style="margin-top:14px">
+          <h2 style="margin:0 0 8px">Gallery</h2>
+          <div class="gallery">
+            <!-- Replace src with your photos -->
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="room 1">
+            <img src="https://images.unsplash.com/photo-1560440199-7d7f8f3b8c84?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="room 2">
+            <img src="https://images.unsplash.com/photo-1505692794408-0c6c9f5b4b4a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="common area">
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Location</h3>
+          <div style="color:var(--muted);font-size:14px;margin-bottom:8px">VGP QUEENS TOWN • CHETTIPED • 600124</div>
+
+          <!-- Replace the src of the iframe below with your Google Maps embed code -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019...replace_with_real_embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="cta" href="https://www.google.com/maps/search/?api=1&query=13.027017,80.020985" target="_blank">Open in Maps</a>
+            <a style="align-self:center;color:var(--muted);text-decoration:none;font-weight:700" href="mailto:ragavanagineni@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div id="contact" class="card" style="margin-top:14px">
+          <h3 style="margin-top:0">Contact & Booking</h3>
+          <form action="mailto:ragavanagineni@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+            <input type="email" name="email" placeholder="Email (optional)">
+            <select name="room_type">
+              <option value="single">Single Room</option>
+              <option value="double">3-Sharing</option>
+              <option value="deluxe">4-Sharing</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Preferred move-in date / questions"></textarea>
+            <button type="submit" style="padding:10px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700">Send Inquiry</button>
+          </form>
+
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">
+            Or message on WhatsApp: <a href="https://wa.me/PHONE_NUMBER_PLAINTEXT" target="_blank">7013178370</a>
+          </div>
+        </div>
+
+      </aside>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> VASISHTHA PG — All rights reserved.</div>
+      <div style="margin-top:6px;font-size:13px;color:var(--muted)">Made with ❤️ • Manage listings on Google Maps to appear in searches</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Quick replace hints for you:
+    // - Replace VASISHTHA PG, VGP QUEENS TOWN etc. with real values.
+    // - Replace the iframe src with the Google Maps Embed code (Share > Embed map on Google Maps).
+    // - For form handling use Formspree or your preferred backend if mailto isn't suitable.
+  </script>
+</body>
+</html>
